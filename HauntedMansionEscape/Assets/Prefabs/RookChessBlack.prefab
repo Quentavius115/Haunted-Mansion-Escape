@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8729751171334997132}
   - component: {fileID: 1363684852173951483}
   m_Layer: 0
-  m_Name: RookChess
+  m_Name: RookChessBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

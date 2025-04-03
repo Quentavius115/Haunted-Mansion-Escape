@@ -55,7 +55,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_4dbaa01b-8110-4c56-b2ba-44ebb4f8bb76
+    name: UM_OperatedMesh_746a22b2-72b4-4cb8-a83d-7e5405c79d1e
     skinnedMesh: 0
     sharedMesh: {fileID: 5525482036229088744}
     buidVersion:
@@ -67,7 +67,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 4dbaa01b-8110-4c56-b2ba-44ebb4f8bb76
+  sourceMeshRendererGUID: 746a22b2-72b4-4cb8-a83d-7e5405c79d1e
   guid: 51e9509a-39b0-4b6d-b888-8ddce6424b6f
   localOptions:
     RecalculateTangents: 0

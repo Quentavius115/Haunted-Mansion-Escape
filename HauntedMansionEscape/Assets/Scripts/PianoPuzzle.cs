@@ -5,7 +5,7 @@ using State = PuzzleState;
 
 public class Puzzle_2 : MonoBehaviour
 {
-    public State State { get; private set; }
+    public PianoState State { get; private set; }
     private Note lastNote;
 
     private Dictionary<State, Action> stateEnterMethods;
@@ -44,6 +44,7 @@ public class Puzzle_2 : MonoBehaviour
         stateStayMethods[State]();
         lastNote = Note.NONE;
     }
+
     private void ChangeState(State newState)
     {
         if (State != newState)
@@ -123,7 +124,7 @@ public class Puzzle_2 : MonoBehaviour
     }
     private void StateStay_Error()
     {
-
+        // Something
     }
     #endregion
     #endregion

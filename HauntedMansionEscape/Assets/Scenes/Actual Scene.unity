@@ -1244,7 +1244,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_103991ae-9d52-4759-ad97-d57376edc2ec
+    name: UM_OperatedMesh_cf65d419-6115-49f6-90e0-5b6da47d1fca
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: d7fbfae2a819eb44c9e16048f5f4986b, type: 2}
     buidVersion:
@@ -1256,7 +1256,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 103991ae-9d52-4759-ad97-d57376edc2ec
+  sourceMeshRendererGUID: cf65d419-6115-49f6-90e0-5b6da47d1fca
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -1503,7 +1503,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_af7d36fc-7276-46ab-8d2f-a9803e157579
+    name: UM_OperatedMesh_f5d94bc1-cd53-4ad6-8b12-5af205c34897
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 31054481fcafc6345be329c3effdbc86, type: 2}
     buidVersion:
@@ -1515,7 +1515,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: af7d36fc-7276-46ab-8d2f-a9803e157579
+  sourceMeshRendererGUID: f5d94bc1-cd53-4ad6-8b12-5af205c34897
   guid: a1107598-5998-42de-801b-155f43833e28
   localOptions:
     RecalculateTangents: 0
@@ -1584,6 +1584,128 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04, y: 0.08615549, z: 0.04}
   m_Center: {x: 0, y: 0.043077745, z: 0}
+--- !u!114 &620325553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620325542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_AttachTransform: {fileID: 0}
+  m_SecondaryAttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_ReinitializeDynamicAttachEverySingleGrab: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 8
+  m_TightenPosition: 0.1
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 8
+  m_TightenRotation: 0.1
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  m_FarAttachMode: 0
 --- !u!1 &844630313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,11 +3184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5872728989423422927, guid: 62e6694932e11f348a85b3c0057e6f1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.059
+      value: -9.099
       objectReference: {fileID: 0}
     - target: {fileID: 5872728989423422927, guid: 62e6694932e11f348a85b3c0057e6f1e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.091
+      value: 2.463
       objectReference: {fileID: 0}
     - target: {fileID: 5872728989423422927, guid: 62e6694932e11f348a85b3c0057e6f1e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3110,6 +3232,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3026085322903712330, guid: 62e6694932e11f348a85b3c0057e6f1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 620325548}
+    - targetCorrespondingSourceObject: {fileID: 3026085322903712330, guid: 62e6694932e11f348a85b3c0057e6f1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 620325553}
   m_SourcePrefab: {fileID: 100100000, guid: 62e6694932e11f348a85b3c0057e6f1e, type: 3}
 --- !u!1 &1751010799
 GameObject:
@@ -3475,7 +3600,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_2a0005fe-907c-401a-95c0-47ee12bda2b6
+    name: UM_OperatedMesh_cd9b449e-6c7d-4b7a-9997-7d80cf6afba5
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 03d5e33f777e28948aaad1c18d536b09, type: 2}
     buidVersion:
@@ -3487,7 +3612,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 2a0005fe-907c-401a-95c0-47ee12bda2b6
+  sourceMeshRendererGUID: cd9b449e-6c7d-4b7a-9997-7d80cf6afba5
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0

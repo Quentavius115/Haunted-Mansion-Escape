@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,19 +17,19 @@ public class Puzzle_2 : MonoBehaviour
         stateEnterMethods = new()
         {
             [State.IDLE] = StateEnter_Idle,
-            [State._FIRST_KEY_E] = StateEnter_First_Key_E,
+            [State._FIRST_KEY_E] = StateEnter_FIRST_KEY_E,
             [State._SECOND_KEY_G] = StateEnter_SECOND_KEY_G,
             [State._THIRD_KEY_A] = StateEnter_THIRD_KEY_A,
-            [State.FINALKEYF] = StateEnter_FINAL_KEY_F,
+            [State._FINAL_KEY_F] = StateEnter_FINAL_KEY_F,
             [State.ERROR] = StateEnter_Error,
         };
         stateStayMethods = new()
         {
             [State.IDLE] = StateStay_Idle,
-            [State._FIRST_KEY_E] = StateStay_First_Key_E,
+            [State._FIRST_KEY_E] = StateStay_FIRST_KEY_E,
             [State._SECOND_KEY_G] = StateStay_SECOND_KEY_G,
             [State._THIRD_KEY_A] = StateStay_THIRD_KEY_A,
-            [State.FINALKEYF] = StateStay_FINAL_KEY_F,
+            [State._FINAL_KEY_F] = StateStay_FINAL_KEY_F,
             [State.ERROR] = StateStay_Error,
         };
         lastNote = Note.NONE;
@@ -57,7 +58,7 @@ public class Puzzle_2 : MonoBehaviour
     #region State Methods
     #region State Enter Methods
     private void StateEnter_Idle() { }
-    private void StateEnter_First_Key_E()
+    private void StateEnter_FIRST_KEY_E()
     {
         // play E
     }
@@ -83,11 +84,18 @@ public class Puzzle_2 : MonoBehaviour
     #region State Stay Methods
     private void StateStay_Idle()
     {
-        // do something
+        if (lastNote == Note.E4)
+        {
+            ChangeState(State._FIRST_KEY_E);
+        }
+        else
+        {
+            ChangeState(State.ERROR);
+        }
     }
-    private void StateStay_First_Key_E()
+    private void StateStay_FIRST_KEY_E()
     {
-        if (lastNote == Note._SECOND_KEY_G)
+        if (lastNote == Note.G4)
         {
             ChangeState(State._SECOND_KEY_G);
         }
@@ -98,7 +106,7 @@ public class Puzzle_2 : MonoBehaviour
     }
     private void StateStay_SECOND_KEY_G()
     {
-        if (lastNote == Note._THIRD_KEY_A)
+        if (lastNote == Note.A5)
         {
             ChangeState(State._THIRD_KEY_A);
         }
@@ -109,7 +117,7 @@ public class Puzzle_2 : MonoBehaviour
     }
     private void StateStay_THIRD_KEY_A()
     {
-        if (lastNote == Note._FINAL_KEY_F)
+        if (lastNote == Note.F4)
         {
             ChangeState(State._FINAL_KEY_F);
         }

@@ -1,5 +1,6 @@
 public enum Note { 
 
+    NONE,
     C4,
     D4,
     E4,

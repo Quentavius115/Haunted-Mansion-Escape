@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using State = PuzzleState;
+using State = PianoState;
 
 public class Puzzle_2 : MonoBehaviour
 {

@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 528449291}
   - component: {fileID: 528449292}
   m_Layer: 0
-  m_Name: Floor1
+  m_Name: Floor1 + walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -471,8 +471,8 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
---- !u!65 &528449292
-BoxCollider:
+--- !u!64 &528449292
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -489,9 +489,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 20, y: 0.21614707, z: 14.387601}
-  m_Center: {x: 0, y: 0.89192647, z: 2.8061996}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 8356de9cbf899dc4aaef5148b117de18, type: 2}
 --- !u!1 &741040788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1146,7 @@ GameObject:
   - component: {fileID: 1780153794}
   - component: {fileID: 1780153793}
   - component: {fileID: 1780153798}
+  - component: {fileID: 1780153799}
   m_Layer: 0
   m_Name: Floor2
   m_TagString: Untagged
@@ -1347,6 +1349,28 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!64 &1780153799
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780153791}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5ae5308e73a844b4ab5f52fe930a5720, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

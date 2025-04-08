@@ -30,6 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4398888276842214783}
+  - {fileID: 815653093622074900}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4616894985413881304
@@ -87,7 +88,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_4ad43ba5-3a00-46fe-a6b2-74afdcfde202
+    name: UM_OperatedMesh_9e4ddae5-a566-4103-bddd-0b3139a49152
     skinnedMesh: 0
     sharedMesh: {fileID: 730657536652289568}
     buidVersion:
@@ -99,7 +100,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 4ad43ba5-3a00-46fe-a6b2-74afdcfde202
+  sourceMeshRendererGUID: 9e4ddae5-a566-4103-bddd-0b3139a49152
   guid: c370424e-a6f7-4cc8-ac39-c61e74ca8ff7
   localOptions:
     RecalculateTangents: 0
@@ -221,7 +222,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_601b91ce-ea07-4b77-a3a0-64ac05c3c2af
+    name: UM_OperatedMesh_50b4247a-94cd-41a4-8fcf-84ca9e6fe28e
     skinnedMesh: 0
     sharedMesh: {fileID: -6214311857862251659}
     buidVersion:
@@ -233,7 +234,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 601b91ce-ea07-4b77-a3a0-64ac05c3c2af
+  sourceMeshRendererGUID: 50b4247a-94cd-41a4-8fcf-84ca9e6fe28e
   guid: 24eeffbf-1b33-4554-89bc-d5f2669863d0
   localOptions:
     RecalculateTangents: 0
@@ -299,6 +300,68 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1525201672518865497
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 714475448465987047}
+    m_Modifications:
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0562
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1509
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0959
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879339155877013662, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+      propertyPath: m_Name
+      value: Flame
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+--- !u!4 &815653093622074900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2196440493412015181, guid: dd28afb507c467945b9cb1e7a5579a73, type: 3}
+  m_PrefabInstance: {fileID: 1525201672518865497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &-6214311857862251659
 Mesh:
   m_ObjectHideFlags: 0

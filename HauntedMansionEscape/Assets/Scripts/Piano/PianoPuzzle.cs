@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using State = PianoState;
 
-public class Puzzle_2 : MonoBehaviour
+public class PianoPuzzle : MonoBehaviour
 {
     public PianoState State { get; private set; }
     private Note lastNote;
+    public AudioSource audioSrc;
 
     private Dictionary<State, Action> stateEnterMethods;
     private Dictionary<State, Action> stateStayMethods;
@@ -34,6 +35,7 @@ public class Puzzle_2 : MonoBehaviour
         };
         lastNote = Note.NONE;
         State = State.IDLE;
+        audioSrc = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -57,22 +59,25 @@ public class Puzzle_2 : MonoBehaviour
 
     #region State Methods
     #region State Enter Methods
-    private void StateEnter_Idle() { }
+    private void StateEnter_Idle() 
+    { 
+        // Do Nothing
+    }
     private void StateEnter_FIRST_KEY_E()
     {
-        // play E
+        Debug.Log("E4");
     }
     private void StateEnter_SECOND_KEY_G()
     {
-        // play G
+        Debug.Log("G4");
     }
     private void StateEnter_THIRD_KEY_A()
     {
-        // play A
+        Debug.Log("A5");
     }
     private void StateEnter_FINAL_KEY_F()
     {
-        // play F
+        Debug.Log("F4");
     }
     private void StateEnter_Error()
     {
@@ -128,16 +133,18 @@ public class Puzzle_2 : MonoBehaviour
     }
     private void StateStay_FINAL_KEY_F()
     {
-        // Do Nothing
+        
     }
     private void StateStay_Error()
     {
-        // Something
+        // Do Nothing
     }
     #endregion
     #endregion
     public void Press(Note note)
     {
+        Note newNote = note;
         lastNote = note;
+        note = newNote;
     }
 }

@@ -8,8 +8,11 @@ public class Button : MonoBehaviour
     public GameObject button;
     public UnityEvent onPress;
     public UnityEvent onRelease;
+    public PianoPuzzle puzzle;
+    public Note note;
+    public AudioSource audioSrc;
+    public AudioClip clip;
     GameObject presser;
-    AudioSource audioSrc;
     bool isPressed;
 
     // Start is called before the first frame update
@@ -26,7 +29,7 @@ public class Button : MonoBehaviour
             button.transform.localPosition = new Vector3(0, 0.003f, 0);
             presser = other.gameObject;
             onPress.Invoke();
-            audioSrc.Play();
+            audioSrc.PlayOneShot(clip, 1.0f);
             isPressed = true;
         }
 
@@ -42,8 +45,20 @@ public class Button : MonoBehaviour
         }
     }
 
-    public void printHi()
+    public void Press()
     {
-        Debug.Log("Hello");
+        if (puzzle.State != PianoState._FINAL_KEY_F)
+        {
+            puzzle.Press(note);
+        }
+        else
+        {
+            audioSrc.Play();
+        }
     }
-}
+
+    public void printHi()
+        {
+            Debug.Log("Hello");
+        }
+    }

@@ -1742,7 +1742,7 @@ GameObject:
   - component: {fileID: 8868744032677349485}
   - component: {fileID: 3506806060977718044}
   m_Layer: 0
-  m_Name: Boarded Window 1
+  m_Name: Boarded Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

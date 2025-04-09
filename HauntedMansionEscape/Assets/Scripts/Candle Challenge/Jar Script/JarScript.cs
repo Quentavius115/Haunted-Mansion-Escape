@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public enum JarContents
 {
@@ -22,11 +25,14 @@ public class JarScript : MonoBehaviour
 
     public GameObject containerDust;
     public GameObject dust;
+    public Transform lidSnapPoint;
 
     private BurningState fireColor;
     private Color chemecialColor;
     private bool pouring;
 
+    // Socket Help Note https://learn.unity.com/tutorial/xr-interaction-toolkit-working-with-the-socket-interactor
+    // Its out of date but IDE will update it and make the right call
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +41,10 @@ public class JarScript : MonoBehaviour
         SetChemical(content);
         containerDust.GetComponent<MeshRenderer>().material.color = chemecialColor;
 
+        // Adds Listeners
+        XRSocketInteractor socket = GetComponent<XRSocketInteractor>();
+        socket.selectEntered.AddListener(OnItemSnapped);
+        socket.selectExited.AddListener(OnItemRemoved);
     }
 
     // Update is called once per frame
@@ -44,6 +54,20 @@ public class JarScript : MonoBehaviour
     }
 
 
+    // Snapping Logic
+    void OnItemSnapped(SelectEnterEventArgs arg0)
+    {
+        //Trying to fix object not fully snapping issue
+        // args.interactableObject.transform.GetComponent<Collider>().enabled = false;
+        UpdateState(JarState.CLOSED);
+    }
+
+    void OnItemRemoved(SelectExitEventArgs arg0)
+    {
+        // args.interactableObject.transform.GetComponent<Collider>().enabled = true;
+        UpdateState(JarState.OPEN);
+    }
+
     void SpawnChemical()
     {
         // spawn x dust
@@ -52,7 +76,7 @@ public class JarScript : MonoBehaviour
             // small area for dust to spawn from the top of the jar
             Vector3 randomOffset = new(
                 Random.Range(-0.05f, 0.05f),
-                Random.Range(-0.05f, 0.05f) + .2f,
+                Random.Range(-0.05f, 0.05f) + .15f,
                 Random.Range(-0.05f, 0.05f)
             );
 
@@ -72,19 +96,23 @@ public class JarScript : MonoBehaviour
         Vector3 rotation = transform.eulerAngles;
 
         // Upside down is between 120 and 240 for both x and z
-        if ((rotation.x > 120 && rotation.x < 240) || (rotation.z > 120 && rotation.z < 240))
+        if (State != JarState.CLOSED)
         {
-            UpdateState(JarState.POURING);
-        }
-        else
-        {
-            UpdateState(JarState.OPEN);
+            if ((rotation.x > 120 && rotation.x < 240) || (rotation.z > 120 && rotation.z < 240))
+            {
+                UpdateState(JarState.POURING);
+            }
+            else
+            {
+                UpdateState(JarState.OPEN);
+            }
         }
     }
 
     // State Machine for the jar, currently only open and pour works, will implement lid with snapping
     void UpdateState(JarState state)
     {
+        State = state;
         switch (state)
         {
             case JarState.EMPTY:

@@ -22,6 +22,8 @@ public class CandleListener : MonoBehaviour
 
     void CheckAllCandlesLit()
     {
+
+        // Add logic for checking if book is satisfied by being in correct snapped place 
         bool allStateSatisfied = true;
 
         foreach (var candle in allCandles)
@@ -36,7 +38,6 @@ public class CandleListener : MonoBehaviour
         if (allStateSatisfied)
         {
             checkCube.GetComponent<MeshRenderer>().material.color = Color.green;
-            Debug.Log("All candles are lit, cube is now green!");
         }
     }
 }

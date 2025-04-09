@@ -22,26 +22,32 @@ public class Button : MonoBehaviour
         isPressed = false;
     }
 
-    private void OnTriggerEvent(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (!isPressed)
+        if (collision.gameObject.CompareTag("player"))
         {
-            button.transform.localPosition = new Vector3(0, 0.003f, 0);
-            presser = other.gameObject;
-            onPress.Invoke();
-            audioSrc.PlayOneShot(clip, 1.0f);
-            isPressed = true;
+            Debug.Log("accepted");
+            if (!isPressed)
+            {
+                button.transform.localPosition = new Vector3(0, 0.003f, 0);
+                presser = collision.gameObject;
+                onPress.Invoke();
+                audioSrc.PlayOneShot(clip, 1.0f);
+                isPressed = true;
+            }
         }
-
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collider collision)
     {
-        if (other == presser)
+        if (collision.gameObject.CompareTag("player"))
         {
-            button.transform.localPosition = new Vector3(0, 0.015f, 0);
-            onRelease.Invoke();
-            isPressed = false;
+            if (collision == presser)
+            {
+                button.transform.localPosition = new Vector3(0, 0.015f, 0);
+                onRelease.Invoke();
+                isPressed = false;
+            }
         }
     }
 
@@ -58,7 +64,7 @@ public class Button : MonoBehaviour
     }
 
     public void printHi()
-        {
-            Debug.Log("Hello");
+    {
+        Debug.Log("Hello");
         }
     }

@@ -70,7 +70,7 @@ namespace Unity.VRTemplate
             public void SetTargetFromVector(Vector3 direction)
             {
                 // Set the target angle
-                var targetAngle = Mathf.Atan2(direction.z, direction.x) * Mathf.Rad2Deg;
+                var targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
                 // Return the offset
                 m_CurrentOffset = ShortestAngleDistance(m_BaseAngle, targetAngle, 360.0f);
@@ -265,17 +265,17 @@ namespace Unity.VRTemplate
             // We cache the three potential sources of rotation - the position offset, the forward vector of the controller, and up vector of the controller
             // We store any data used for determining which rotation to use, then flatten the vectors to the local xz plane
             var localOffset = transform.InverseTransformVector(interactorTransform.position - m_Handle.position);
-            localOffset.y = 0.0f;
+            localOffset.z = 0.0f;
             var radiusOffset = transform.TransformVector(localOffset).magnitude;
             localOffset.Normalize();
 
             var localForward = transform.InverseTransformDirection(interactorTransform.forward);
-            var localY = Math.Abs(localForward.y);
-            localForward.y = 0.0f;
+            var localY = Math.Abs(localForward.z);
+            localForward.z = 0.0f;
             localForward.Normalize();
 
             var localUp = transform.InverseTransformDirection(interactorTransform.up);
-            localUp.y = 0.0f;
+            localUp.z = 0.0f;
             localUp.Normalize();
 
             if (m_PositionDriven && !freshCheck)

@@ -505,6 +505,18 @@ PrefabInstance:
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e72b73d954715b4db3efe81da2ef6c9, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
     - target: {fileID: 1695253626168215232, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: m_Name
       value: Button E4
@@ -633,7 +645,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8a9d1ef5029c13f43bbaa39a03714666, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.602
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1468,7 +1480,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_cd48f061-82cd-4574-821d-21552284e4eb
+    name: UM_OperatedMesh_bb805f30-a9b6-4e7c-83a9-f32ac23956d7
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 226e83861a2d6454e8a37ee684dc676d, type: 2}
     buidVersion:
@@ -1480,7 +1492,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: cd48f061-82cd-4574-821d-21552284e4eb
+  sourceMeshRendererGUID: bb805f30-a9b6-4e7c-83a9-f32ac23956d7
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -1836,7 +1848,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_8e28f53e-ad20-4dee-b984-087ec566dcd9
+    name: UM_OperatedMesh_5fc61471-7da8-4b0c-b717-6c39c9ce5060
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: a964972f97c9c7b44a4d5f9908cabd20, type: 2}
     buidVersion:
@@ -1848,7 +1860,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 8e28f53e-ad20-4dee-b984-087ec566dcd9
+  sourceMeshRendererGUID: 5fc61471-7da8-4b0c-b717-6c39c9ce5060
   guid: a1107598-5998-42de-801b-155f43833e28
   localOptions:
     RecalculateTangents: 0
@@ -2158,6 +2170,18 @@ PrefabInstance:
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7bbe1ff4c9160c84bb2aa26aee01a005, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
     - target: {fileID: 1695253626168215232, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: m_Name
       value: Button G4
@@ -2333,6 +2357,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 10a4f4edecdf49e4497d83a117ab69fa, type: 3}
     - target: {fileID: 566494091225840078, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 10a4f4edecdf49e4497d83a117ab69fa, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}
@@ -4067,6 +4103,18 @@ PrefabInstance:
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 232d88423847ad640843689a411ef4f5, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
     - target: {fileID: 1695253626168215232, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: m_Name
       value: Button A5
@@ -4277,6 +4325,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 6095ca073bd1ed84c923970e856e73e3, type: 3}
     - target: {fileID: 566494091225840078, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6095ca073bd1ed84c923970e856e73e3, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}
@@ -4935,7 +4995,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_d09bc595-ceba-4e23-b51c-6de39c1f07e6
+    name: UM_OperatedMesh_db63294c-572c-40d9-b1ce-7fd1359c5710
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 81129c7e98d3aa046bbae079a209ad1c, type: 2}
     buidVersion:
@@ -4947,7 +5007,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: d09bc595-ceba-4e23-b51c-6de39c1f07e6
+  sourceMeshRendererGUID: db63294c-572c-40d9-b1ce-7fd1359c5710
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -5212,6 +5272,18 @@ PrefabInstance:
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 371726c26589d5b47a9553a38209ca04, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
     - target: {fileID: 1695253626168215232, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: m_Name
       value: Button B5
@@ -5299,6 +5371,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 87c4a3b8a06d0454e9cbf58b1cc5bbe4, type: 3}
     - target: {fileID: 566494091225840078, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 87c4a3b8a06d0454e9cbf58b1cc5bbe4, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}
@@ -5472,6 +5556,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 566494091225840078, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: audioSrc
+      value: 
+      objectReference: {fileID: 227844289}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e0ad1a31ee59bc44db055a9b389afefc, type: 3}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
+      propertyPath: note
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
       objectReference: {fileID: 227844289}

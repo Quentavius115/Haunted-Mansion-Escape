@@ -13,13 +13,11 @@ public class Button : MonoBehaviour
     public AudioSource audioSrc;
     public AudioClip clip;
     GameObject presser;
-    bool isPressed;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
-        isPressed = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -27,27 +25,10 @@ public class Button : MonoBehaviour
         if (collision.gameObject.CompareTag("player"))
         {
             Debug.Log("accepted");
-            if (!isPressed)
-            {
-                button.transform.localPosition = new Vector3(0, 0.003f, 0);
-                presser = collision.gameObject;
-                onPress.Invoke();
-                audioSrc.PlayOneShot(clip, 1.0f);
-                isPressed = true;
-            }
-        }
-    }
-
-    private void OnCollisionExit(Collider collision)
-    {
-        if (collision.gameObject.CompareTag("player"))
-        {
-            if (collision == presser)
-            {
-                button.transform.localPosition = new Vector3(0, 0.015f, 0);
-                onRelease.Invoke();
-                isPressed = false;
-            }
+            button.transform.localPosition = new Vector3(0, 0.003f, 0);
+            presser = collision.gameObject;
+            onPress.Invoke();
+            audioSrc.PlayOneShot(clip, 1.0f);
         }
     }
 

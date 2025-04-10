@@ -75,7 +75,7 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateEnter_FINAL_KEY_F()
     {
-        SoundManager.Play(SoundType.FINISHED);
+        // SoundManager.Play(SoundType.FINISHED);
     }
     private void StateEnter_Error()
     {

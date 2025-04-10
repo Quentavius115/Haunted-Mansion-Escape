@@ -8,6 +8,7 @@ public enum SoundType
     AMBIENCE,
     FLAME_IGNITE,
     FLAME_CHANGE,
+    PIANOFINISH,
 }
 
 public class SoundCollection
@@ -75,6 +76,7 @@ public class SoundManager : MonoBehaviour
             { SoundType.AMBIENCE, new("Ambience/Thunder_1","Ambience/Thunder_2","Ambience/Thunder_3","Ambience/Thunder_4","Ambience/Spooky_1","Ambience/Spooky_2") },
             { SoundType.FLAME_IGNITE, new("Candle_Light") },
             { SoundType.FLAME_CHANGE, new("Candle_Change") },
+            { SoundType.PIANOFINISH, new("CounterPoint") },
         };
     }
 

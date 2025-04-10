@@ -9,6 +9,7 @@ public class PianoPuzzle : MonoBehaviour
     public PianoState State { get; private set; }
     public Note lastNote;
     public AudioSource audioSrc;
+    public DoorScript door;
 
     private Dictionary<State, Action> stateEnterMethods;
     private Dictionary<State, Action> stateStayMethods;
@@ -75,7 +76,8 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateEnter_FINAL_KEY_F()
     {
-        // SoundManager.Play(SoundType.FINISHED);
+        SoundManager.Play(SoundType.PIANOFINISH);
+        door.UpdateState(DoorState.OPENING);
     }
     private void StateEnter_Error()
     {

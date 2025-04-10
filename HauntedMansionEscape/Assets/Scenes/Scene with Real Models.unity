@@ -2500,7 +2500,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 2
   renderableMesh:
-    name: UM_OperatedMesh_0c9791b9-ecaa-4953-a21e-2240b0e15732
+    name: UM_OperatedMesh_c3fcb35e-a9e4-4d5f-8bca-3ab293fba5c2
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: d2779fb2cfd42384592cd915aee666c0, type: 2}
     buidVersion:
@@ -2512,7 +2512,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 0c9791b9-ecaa-4953-a21e-2240b0e15732
+  sourceMeshRendererGUID: c3fcb35e-a9e4-4d5f-8bca-3ab293fba5c2
   guid: 20a633b6-1b6f-4964-96cf-9442fcf9e839
   localOptions:
     RecalculateTangents: 0
@@ -11612,7 +11612,7 @@ MonoBehaviour:
   - Assets/Materials/Shaggy Rug.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_a65cdabe-e27c-4366-abbf-2602722566c7
+    name: UM_OperatedMesh_5d7a07e0-08cb-478d-b321-0845aef8229f
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 8356de9cbf899dc4aaef5148b117de18, type: 2}
     buidVersion:
@@ -11624,7 +11624,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: a65cdabe-e27c-4366-abbf-2602722566c7
+  sourceMeshRendererGUID: 5d7a07e0-08cb-478d-b321-0845aef8229f
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -14449,7 +14449,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_2fca4c33-3837-4666-97d8-0b3b2e711b85
+    name: UM_OperatedMesh_bfc068a8-ef66-4fd0-a3d4-93b1b72b8124
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 7e443e5ee88cc574cadacdd1ee3c7f6c, type: 2}
     buidVersion:
@@ -14461,7 +14461,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 2fca4c33-3837-4666-97d8-0b3b2e711b85
+  sourceMeshRendererGUID: bfc068a8-ef66-4fd0-a3d4-93b1b72b8124
   guid: 2c3c9802-4994-4a0e-a60f-665339116111
   localOptions:
     RecalculateTangents: 0
@@ -24763,6 +24763,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium Candle
       objectReference: {fileID: 0}
+    - target: {fileID: 4663878095610856938, guid: 38f648deada4c8d46b54f9b86f7de9e7, type: 3}
+      propertyPath: State
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4663878095610856938, guid: 38f648deada4c8d46b54f9b86f7de9e7, type: 3}
+      propertyPath: requiredState
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28485,7 +28493,7 @@ MonoBehaviour:
   - Assets/Materials/Chipped Painted Wall.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_8099b1c3-8a32-4bcd-b68e-4aef2761282a
+    name: UM_OperatedMesh_a51b603e-ca6c-41b2-a61d-6fb6e943cec6
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 5ae5308e73a844b4ab5f52fe930a5720, type: 2}
     buidVersion:
@@ -28497,7 +28505,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 8099b1c3-8a32-4bcd-b68e-4aef2761282a
+  sourceMeshRendererGUID: a51b603e-ca6c-41b2-a61d-6fb6e943cec6
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -30642,7 +30650,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Black.mat
   currentMaterialIndex: 1
   renderableMesh:
-    name: UM_OperatedMesh_6c9a28dd-e957-48d9-88e5-558f2d2310f2
+    name: UM_OperatedMesh_0d16a6b2-b09a-4cf8-8349-4aecd883414a
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 6308d2061c80a794b9dabb7b1abaea34, type: 2}
     buidVersion:
@@ -30654,7 +30662,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 6c9a28dd-e957-48d9-88e5-558f2d2310f2
+  sourceMeshRendererGUID: 0d16a6b2-b09a-4cf8-8349-4aecd883414a
   guid: 080f87c4-3c7e-46dc-93a0-591613a2096a
   localOptions:
     RecalculateTangents: 0

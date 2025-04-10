@@ -2500,7 +2500,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 2
   renderableMesh:
-    name: UM_OperatedMesh_c3fcb35e-a9e4-4d5f-8bca-3ab293fba5c2
+    name: UM_OperatedMesh_de3b93e5-4fce-4d09-b88c-23aa4c807fd1
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: d2779fb2cfd42384592cd915aee666c0, type: 2}
     buidVersion:
@@ -2512,7 +2512,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: c3fcb35e-a9e4-4d5f-8bca-3ab293fba5c2
+  sourceMeshRendererGUID: de3b93e5-4fce-4d09-b88c-23aa4c807fd1
   guid: 20a633b6-1b6f-4964-96cf-9442fcf9e839
   localOptions:
     RecalculateTangents: 0
@@ -9475,7 +9475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastNote: 0
   audioSrc: {fileID: 388340669}
-  door: {fileID: 0}
+  door: {fileID: 1913830475}
   atticDoor: {fileID: 1913830469}
 --- !u!82 &388340669
 AudioSource:
@@ -11612,7 +11612,7 @@ MonoBehaviour:
   - Assets/Materials/Shaggy Rug.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_5d7a07e0-08cb-478d-b321-0845aef8229f
+    name: UM_OperatedMesh_14b58af9-8d1e-4777-bc26-b788c4072bda
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 8356de9cbf899dc4aaef5148b117de18, type: 2}
     buidVersion:
@@ -11624,7 +11624,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 5d7a07e0-08cb-478d-b321-0845aef8229f
+  sourceMeshRendererGUID: 14b58af9-8d1e-4777-bc26-b788c4072bda
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -14449,7 +14449,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_bfc068a8-ef66-4fd0-a3d4-93b1b72b8124
+    name: UM_OperatedMesh_35ead9e1-5cc3-47fc-9434-4057a4ca521c
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 7e443e5ee88cc574cadacdd1ee3c7f6c, type: 2}
     buidVersion:
@@ -14461,7 +14461,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: bfc068a8-ef66-4fd0-a3d4-93b1b72b8124
+  sourceMeshRendererGUID: 35ead9e1-5cc3-47fc-9434-4057a4ca521c
   guid: 2c3c9802-4994-4a0e-a60f-665339116111
   localOptions:
     RecalculateTangents: 0
@@ -28505,7 +28505,7 @@ MonoBehaviour:
   - Assets/Materials/Chipped Painted Wall.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_a51b603e-ca6c-41b2-a61d-6fb6e943cec6
+    name: UM_OperatedMesh_edbbc5be-b8b8-4bae-8d5a-f2f5bcae633b
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 5ae5308e73a844b4ab5f52fe930a5720, type: 2}
     buidVersion:
@@ -28517,7 +28517,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: a51b603e-ca6c-41b2-a61d-6fb6e943cec6
+  sourceMeshRendererGUID: edbbc5be-b8b8-4bae-8d5a-f2f5bcae633b
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -30662,7 +30662,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Black.mat
   currentMaterialIndex: 1
   renderableMesh:
-    name: UM_OperatedMesh_0d16a6b2-b09a-4cf8-8349-4aecd883414a
+    name: UM_OperatedMesh_f2029982-437e-4735-ade8-56de5d4df9f5
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 6308d2061c80a794b9dabb7b1abaea34, type: 2}
     buidVersion:
@@ -30674,7 +30674,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 0d16a6b2-b09a-4cf8-8349-4aecd883414a
+  sourceMeshRendererGUID: f2029982-437e-4735-ade8-56de5d4df9f5
   guid: 080f87c4-3c7e-46dc-93a0-591613a2096a
   localOptions:
     RecalculateTangents: 0
@@ -35785,7 +35785,6 @@ MonoBehaviour:
   burned: 0
   kingYell: {fileID: 1957280961}
   King: {fileID: 1434718338}
-  door: {fileID: 1913830475}
 --- !u!64 &1960333447
 MeshCollider:
   m_ObjectHideFlags: 0

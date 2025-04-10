@@ -9,7 +9,7 @@ public class EndGame : MonoBehaviour
     public GameObject player;
     public Transform playerCam;
     public Image blackScreen;
-    float timeLimit = 15f * 60;
+    float timeLimit = 9f * 60;
     public bool gameIsOver = false;
     // Start is called before the first frame update
     void Start()

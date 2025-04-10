@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cellar.unity
     guid: 10623eaec2da00a43835592339db96f1
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: c0180f2ce0e3eeb47bf4ccb2f04a90cd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
@@ -92,6 +92,7 @@ public class CandleListener : MonoBehaviour
                 OpeningDoor.Play();
                 FinaleTune.Play();
                 Destroy(cursedBook);
+                SceneManager.LoadScene("Victory");
             }
 
         }

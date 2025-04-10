@@ -864,6 +864,112 @@ Transform:
   - {fileID: 999904662}
   m_Father: {fileID: 843466361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &88981960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88981964}
+  - component: {fileID: 88981963}
+  - component: {fileID: 88981962}
+  - component: {fileID: 88981961}
+  m_Layer: 0
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &88981961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88981960}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &88981962
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88981960}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 033489e2bcc2fdd4b8d9d846ab7d3d87, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &88981963
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88981960}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &88981964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88981960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.952, y: 2.081, z: -4.099}
+  m_LocalScale: {x: 1.2476773, y: 2.2898574, z: 0.048699}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &101033725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2060,7 +2166,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 2
   renderableMesh:
-    name: UM_OperatedMesh_534f3ba3-2c5c-42e6-ae1e-a2ddaaec4a98
+    name: UM_OperatedMesh_ad5ffa14-6cfb-4cdf-ac0e-1de2700e171f
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: d2779fb2cfd42384592cd915aee666c0, type: 2}
     buidVersion:
@@ -2072,7 +2178,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 534f3ba3-2c5c-42e6-ae1e-a2ddaaec4a98
+  sourceMeshRendererGUID: ad5ffa14-6cfb-4cdf-ac0e-1de2700e171f
   guid: 20a633b6-1b6f-4964-96cf-9442fcf9e839
   localOptions:
     RecalculateTangents: 0
@@ -8356,6 +8462,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4397533993523300889, guid: 475a0f5064fffcd42ac2a901d4c58800, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1993817412}
+    - targetCorrespondingSourceObject: {fileID: 4397533993523300889, guid: 475a0f5064fffcd42ac2a901d4c58800, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1993817416}
   m_SourcePrefab: {fileID: 100100000, guid: 475a0f5064fffcd42ac2a901d4c58800, type: 3}
 --- !u!4 &401985320 stripped
 Transform:
@@ -9752,7 +9861,7 @@ MonoBehaviour:
   - Assets/Materials/Shaggy Rug.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_56953fe1-a230-427e-843a-eb6a7d972501
+    name: UM_OperatedMesh_33bc85d5-fccb-4e06-9773-970dbd8e27ae
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 8356de9cbf899dc4aaef5148b117de18, type: 2}
     buidVersion:
@@ -9764,7 +9873,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 56953fe1-a230-427e-843a-eb6a7d972501
+  sourceMeshRendererGUID: 33bc85d5-fccb-4e06-9773-970dbd8e27ae
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -11610,7 +11719,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_d7f91a6e-1289-4264-aac1-539accaa437d
+    name: UM_OperatedMesh_ccb4cfab-20bc-40a8-bbe8-ff037b8687bc
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 7e443e5ee88cc574cadacdd1ee3c7f6c, type: 2}
     buidVersion:
@@ -11622,7 +11731,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: d7f91a6e-1289-4264-aac1-539accaa437d
+  sourceMeshRendererGUID: ccb4cfab-20bc-40a8-bbe8-ff037b8687bc
   guid: 2c3c9802-4994-4a0e-a60f-665339116111
   localOptions:
     RecalculateTangents: 0
@@ -21904,7 +22013,7 @@ MonoBehaviour:
   - Assets/Materials/Chipped Painted Wall.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_73315c7e-0724-42ce-925e-1cc65dac810e
+    name: UM_OperatedMesh_98416a62-24eb-43ee-ab02-3616e0d4886f
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 5ae5308e73a844b4ab5f52fe930a5720, type: 2}
     buidVersion:
@@ -21916,7 +22025,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 73315c7e-0724-42ce-925e-1cc65dac810e
+  sourceMeshRendererGUID: 98416a62-24eb-43ee-ab02-3616e0d4886f
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -22825,7 +22934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorPivot: {fileID: 1367608242}
-  State: 2
+  State: 0
 --- !u!4 &1913830479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4858813582773445389, guid: ea4baf9cde57dea41b9f7b9697a23e9f, type: 3}
@@ -23575,7 +23684,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Black.mat
   currentMaterialIndex: 1
   renderableMesh:
-    name: UM_OperatedMesh_d0a6f89a-be41-4642-a2b3-d511293699f9
+    name: UM_OperatedMesh_eafb2fbd-2bc6-4c14-a7bb-9250c43082ca
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 6308d2061c80a794b9dabb7b1abaea34, type: 2}
     buidVersion:
@@ -23587,7 +23696,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: d0a6f89a-be41-4642-a2b3-d511293699f9
+  sourceMeshRendererGUID: eafb2fbd-2bc6-4c14-a7bb-9250c43082ca
   guid: 080f87c4-3c7e-46dc-93a0-591613a2096a
   localOptions:
     RecalculateTangents: 0
@@ -29041,9 +29150,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993817411}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: caa1e9e08f562c24985f82d5bc81fee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorPivot: {fileID: 1448287645}
+  State: 0
+--- !u!114 &1993817416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993817411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b965ef67b4cb2740a64a9d988060b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   doorPivot: {fileID: 1448287645}
@@ -30968,3 +31091,4 @@ SceneRoots:
   - {fileID: 719378312}
   - {fileID: 590933554}
   - {fileID: 2059485836}
+  - {fileID: 88981964}

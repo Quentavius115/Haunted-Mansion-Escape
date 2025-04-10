@@ -58,7 +58,7 @@ public class CandleListener : MonoBehaviour
 
     void CheckAllConditionsSatisfied()
     {
-        var door = endDoor.GetComponent<DoorScript>();
+        var door = endDoor.GetComponent<EndDoorScript>();
 
         // Add logic for checking if book is satisfied by being in correct snapped place 
         bool allStateSatisfied = true;

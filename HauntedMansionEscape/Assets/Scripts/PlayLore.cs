@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PlayLore : MonoBehaviour
 {
-	public AudioSource player;
+	public AudioSource success;
+    public AudioSource Record1;
+    public AudioSource Record2;
+    public enum ObjectType { RecordSuccess, Record1, Record2}
+    public ObjectType objectType;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(GetComponent<AudioSource>() != null){
-            player = GetComponent<AudioSource>();
-        }
 
     }
 
@@ -21,7 +22,50 @@ public class PlayLore : MonoBehaviour
         
     }
 
-    public void Play(){
-        player.Play();
+
+    public void OnPlaced(){
+        switch(objectType){
+            case ObjectType.RecordSuccess:
+            if (success != null){
+                success.Play();
+            }
+            break;
+            
+            case ObjectType.Record1:
+            if (Record1 != null){
+                Record1.Play();
+            }
+                break;
+            
+            case ObjectType.Record2:
+            if(Record2 != null){
+                Record2.Play();
+            }
+                break;
+        }
+    }
+
+    public void OnRemoved(){
+        switch(objectType){
+            case ObjectType.RecordSuccess:
+                if (success.isPlaying){
+                    success.Stop();
+                }
+                break;
+
+            case ObjectType.Record1:
+                if (Record1.isPlaying){
+                    Record1.Stop(); 
+                }
+                break;
+
+            case ObjectType.Record2:
+                if (Record2.isPlaying){
+                    Record2.Stop();
+                }
+                break;
+            default:
+                break;
+        }
     }
 }

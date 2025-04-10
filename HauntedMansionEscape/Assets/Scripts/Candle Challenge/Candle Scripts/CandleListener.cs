@@ -8,7 +8,6 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class CandleListener : MonoBehaviour
 {
-    public GameObject checkCube;
     public GameObject cursedBook;
     public List<CandelManager> allCandles = new List<CandelManager>();
     public Transform BookSnapPoint;
@@ -27,7 +26,6 @@ public class CandleListener : MonoBehaviour
     {
         FinaleTune.volume = .05f;
         allCandles.AddRange(FindObjectsOfType<CandelManager>());
-        checkCube.GetComponent<MeshRenderer>().material.color = Color.red;
 
     }
 
@@ -50,7 +48,6 @@ public class CandleListener : MonoBehaviour
     {
         BookInPlace = true;
         // Once the book is in place it cant be moved again
-        checkCube.GetComponent<MeshRenderer>().material.color = Color.yellow;
         args.interactableObject.transform.GetComponent<Collider>().enabled = false;
         Connected.Play();
     }
@@ -94,7 +91,6 @@ public class CandleListener : MonoBehaviour
                 door.UpdateState(DoorState.OPEN);
                 OpeningDoor.Play();
                 FinaleTune.Play();
-                checkCube.GetComponent<MeshRenderer>().material.color = Color.green;
                 Destroy(cursedBook);
             }
 

@@ -8,13 +8,20 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class CandleListener : MonoBehaviour
 {
     public GameObject checkCube;
+    public GameObject cursedBook;
     public List<CandelManager> allCandles = new List<CandelManager>();
     public Transform BookSnapPoint;
     private bool BookInPlace;
+    public AudioSource Connected;
+    public AudioSource OpeningDoor;
+    public AudioSource FinaleTune;
+
+    private DoorState Door;
 
     // Start is called before the first frame update
     void Start()
     {
+        FinaleTune.volume = .05f;
         allCandles.AddRange(FindObjectsOfType<CandelManager>());
         checkCube.GetComponent<MeshRenderer>().material.color = Color.red;
     }
@@ -40,7 +47,7 @@ public class CandleListener : MonoBehaviour
         // Once the book is in place it cant be moved again
         checkCube.GetComponent<MeshRenderer>().material.color = Color.yellow;
         args.interactableObject.transform.GetComponent<Collider>().enabled = false;
-        Debug.Log("Book In Place");
+        Connected.Play();
     }
 
 
@@ -68,7 +75,22 @@ public class CandleListener : MonoBehaviour
 
         if (allStateSatisfied)
         {
-            checkCube.GetComponent<MeshRenderer>().material.color = Color.green;
+            // Plays sound only if door isnt open
+            if (Door != DoorState.OPEN)
+            {
+                foreach (var candle in allCandles)
+                {
+                    candle.ChangeState(BurningState.BURNED);
+                }
+
+
+                Door = DoorState.OPEN;
+                OpeningDoor.Play();
+                FinaleTune.Play();
+                checkCube.GetComponent<MeshRenderer>().material.color = Color.green;
+                Destroy(cursedBook);
+            }
+
         }
     }
 }

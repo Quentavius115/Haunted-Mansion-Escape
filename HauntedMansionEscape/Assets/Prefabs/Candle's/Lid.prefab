@@ -90,7 +90,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Brown.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_06165188-dfb1-4edb-b36c-e0a2e6945412
+    name: UM_OperatedMesh_fa799773-94ea-4d0c-a1e1-4883404e5ff7
     skinnedMesh: 0
     sharedMesh: {fileID: -6482779819601118362}
     buidVersion:
@@ -102,7 +102,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 06165188-dfb1-4edb-b36c-e0a2e6945412
+  sourceMeshRendererGUID: fa799773-94ea-4d0c-a1e1-4883404e5ff7
   guid: 538752ae-fda0-4c0e-bbe2-be94bbb844ec
   localOptions:
     RecalculateTangents: 0

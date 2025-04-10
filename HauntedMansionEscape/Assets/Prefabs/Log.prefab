@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5704603457482188065}
   - component: {fileID: 4127151980568317608}
   - component: {fileID: 1041616766823949804}
+  - component: {fileID: 4238831313087196103}
   m_Layer: 0
   m_Name: Log
   m_TagString: Untagged
@@ -55,7 +56,7 @@ MonoBehaviour:
   - Assets/Materials/MostMaterials.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_3b363b5e-30cc-4308-b3d1-cfabc97e830b
+    name: UM_OperatedMesh_a5d1a313-05f3-46d4-bb3e-f8248b97e11c
     skinnedMesh: 0
     sharedMesh: {fileID: -7969210238888375348}
     buidVersion:
@@ -67,7 +68,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 3b363b5e-30cc-4308-b3d1-cfabc97e830b
+  sourceMeshRendererGUID: a5d1a313-05f3-46d4-bb3e-f8248b97e11c
   guid: cd77a764-0eae-4e3e-84ca-42a9fdb70dff
   localOptions:
     RecalculateTangents: 0
@@ -133,6 +134,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4238831313087196103
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037440129867575418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7969210238888375348}
 --- !u!43 &-7969210238888375348
 Mesh:
   m_ObjectHideFlags: 0

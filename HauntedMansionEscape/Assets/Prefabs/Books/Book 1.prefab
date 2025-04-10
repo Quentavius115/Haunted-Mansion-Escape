@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.6406237, y: 0, z: 0.812014}
-  m_LocalScale: {x: 0.36, y: 0.36, z: 0.36}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ MonoBehaviour:
   - Assets/Materials/MostMaterials.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_23f9d639-4ec2-4017-a591-4bd7fae34f36
+    name: UM_OperatedMesh_ec7977ab-70f1-464b-9a8a-1e66776d3b6e
     skinnedMesh: 0
     sharedMesh: {fileID: 7387636587393609608}
     buidVersion:
@@ -68,7 +68,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 23f9d639-4ec2-4017-a591-4bd7fae34f36
+  sourceMeshRendererGUID: ec7977ab-70f1-464b-9a8a-1e66776d3b6e
   guid: 092e70b2-e58c-4ee6-82c3-0c322c15e995
   localOptions:
     RecalculateTangents: 0

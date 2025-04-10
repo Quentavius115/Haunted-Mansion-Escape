@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1701582999367072458}
   - component: {fileID: 8932829879274533812}
   - component: {fileID: 1090427273860962960}
+  - component: {fileID: 1162811712450621990}
   m_Layer: 0
   m_Name: Box 1
   m_TagString: Untagged
@@ -55,7 +56,7 @@ MonoBehaviour:
   - Assets/Materials/Carboard.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_2ce464f6-a0e3-4590-9d46-a7abbf316fe3
+    name: UM_OperatedMesh_5f21fb1c-5235-44f6-a2e6-6f2a6ca86b25
     skinnedMesh: 0
     sharedMesh: {fileID: -4431558934540862879}
     buidVersion:
@@ -67,7 +68,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 2ce464f6-a0e3-4590-9d46-a7abbf316fe3
+  sourceMeshRendererGUID: 5f21fb1c-5235-44f6-a2e6-6f2a6ca86b25
   guid: a412b7e3-03fc-4d72-ad7f-bf1614766f5e
   localOptions:
     RecalculateTangents: 0
@@ -133,6 +134,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1162811712450621990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458797068460636536}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7089797, y: 0.7640531, z: 0.7580367}
+  m_Center: {x: -0.34310102, y: 0.38202655, z: -0.33391508}
 --- !u!43 &-4431558934540862879
 Mesh:
   m_ObjectHideFlags: 0

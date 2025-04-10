@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 10532369422898368}
   - component: {fileID: 4336501359755733767}
   - component: {fileID: 7487856540872659888}
+  - component: {fileID: 3204531579515363063}
   m_Layer: 0
   m_Name: Paper
   m_TagString: Untagged
@@ -55,7 +56,7 @@ MonoBehaviour:
   - Assets/Materials/Paper.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_1171bc7e-ff74-4fad-a5f0-8a5653d4b48d
+    name: UM_OperatedMesh_ab98f50e-29a8-43d4-862b-a1e24fa056f2
     skinnedMesh: 0
     sharedMesh: {fileID: -6218955491838698752}
     buidVersion:
@@ -67,7 +68,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 1171bc7e-ff74-4fad-a5f0-8a5653d4b48d
+  sourceMeshRendererGUID: ab98f50e-29a8-43d4-862b-a1e24fa056f2
   guid: 57602839-34cf-4b0e-aafd-2954cb8025b5
   localOptions:
     RecalculateTangents: 0
@@ -133,6 +134,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3204531579515363063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162769294754756654}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.216, y: 0.279, z: 0.0031030271}
+  m_Center: {x: 0, y: 0.1395, z: -0.0034484863}
 --- !u!43 &-6218955491838698752
 Mesh:
   m_ObjectHideFlags: 0

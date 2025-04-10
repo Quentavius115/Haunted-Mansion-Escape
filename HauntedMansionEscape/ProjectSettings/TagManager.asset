@@ -9,6 +9,7 @@ TagManager:
   - King
   - fire wall
   - End Door
+  - FirstDoor
   layers:
   - Default
   - TransparentFX

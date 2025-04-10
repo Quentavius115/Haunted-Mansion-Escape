@@ -7,6 +7,7 @@ public class FireChange : MonoBehaviour
     public bool burned = false;
     public AudioSource kingYell;
     public GameObject King;
+    public DoorScript door;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class FireChange : MonoBehaviour
         kingYell.Play();
 		yield return new WaitForSeconds(2);
         burned = true;
+        door.UpdateState(DoorState.OPENING);
         Destroy(King);
 
     }

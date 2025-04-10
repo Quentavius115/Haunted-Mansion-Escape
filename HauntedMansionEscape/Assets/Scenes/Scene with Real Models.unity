@@ -2060,7 +2060,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 2
   renderableMesh:
-    name: UM_OperatedMesh_f00569b5-8d33-45f0-9745-bc62bc7ee7ba
+    name: UM_OperatedMesh_534f3ba3-2c5c-42e6-ae1e-a2ddaaec4a98
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: d2779fb2cfd42384592cd915aee666c0, type: 2}
     buidVersion:
@@ -2072,7 +2072,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: f00569b5-8d33-45f0-9745-bc62bc7ee7ba
+  sourceMeshRendererGUID: 534f3ba3-2c5c-42e6-ae1e-a2ddaaec4a98
   guid: 20a633b6-1b6f-4964-96cf-9442fcf9e839
   localOptions:
     RecalculateTangents: 0
@@ -9721,7 +9721,7 @@ MonoBehaviour:
   - Assets/Materials/Shaggy Rug.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_234e7ffb-f9a7-41db-9aae-fcb34a706c0f
+    name: UM_OperatedMesh_56953fe1-a230-427e-843a-eb6a7d972501
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 8356de9cbf899dc4aaef5148b117de18, type: 2}
     buidVersion:
@@ -9733,7 +9733,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 234e7ffb-f9a7-41db-9aae-fcb34a706c0f
+  sourceMeshRendererGUID: 56953fe1-a230-427e-843a-eb6a7d972501
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -11579,7 +11579,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_cc4f65f2-faab-476a-bb2d-8c68a70735ef
+    name: UM_OperatedMesh_d7f91a6e-1289-4264-aac1-539accaa437d
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 7e443e5ee88cc574cadacdd1ee3c7f6c, type: 2}
     buidVersion:
@@ -11591,7 +11591,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: cc4f65f2-faab-476a-bb2d-8c68a70735ef
+  sourceMeshRendererGUID: d7f91a6e-1289-4264-aac1-539accaa437d
   guid: 2c3c9802-4994-4a0e-a60f-665339116111
   localOptions:
     RecalculateTangents: 0
@@ -20692,6 +20692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Working Door
       objectReference: {fileID: 0}
+    - target: {fileID: 2795158330214925024, guid: ea4baf9cde57dea41b9f7b9697a23e9f, type: 3}
+      propertyPath: m_TagString
+      value: FirstDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 4858813582773445389, guid: ea4baf9cde57dea41b9f7b9697a23e9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -21770,7 +21774,7 @@ MonoBehaviour:
   - Assets/Materials/Chipped Painted Wall.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_723d0e91-b201-4a0c-83f6-1775f5afcf1a
+    name: UM_OperatedMesh_73315c7e-0724-42ce-925e-1cc65dac810e
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 5ae5308e73a844b4ab5f52fe930a5720, type: 2}
     buidVersion:
@@ -21782,7 +21786,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 723d0e91-b201-4a0c-83f6-1775f5afcf1a
+  sourceMeshRendererGUID: 73315c7e-0724-42ce-925e-1cc65dac810e
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -23410,7 +23414,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Black.mat
   currentMaterialIndex: 1
   renderableMesh:
-    name: UM_OperatedMesh_48492b37-a2aa-48fe-80e2-0a5c7bc3630a
+    name: UM_OperatedMesh_d0a6f89a-be41-4642-a2b3-d511293699f9
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 6308d2061c80a794b9dabb7b1abaea34, type: 2}
     buidVersion:
@@ -23422,7 +23426,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 48492b37-a2aa-48fe-80e2-0a5c7bc3630a
+  sourceMeshRendererGUID: d0a6f89a-be41-4642-a2b3-d511293699f9
   guid: 080f87c4-3c7e-46dc-93a0-591613a2096a
   localOptions:
     RecalculateTangents: 0
@@ -28533,6 +28537,7 @@ MonoBehaviour:
   burned: 0
   kingYell: {fileID: 1957280961}
   King: {fileID: 1434718338}
+  door: {fileID: 1913830475}
 --- !u!64 &1960333447
 MeshCollider:
   m_ObjectHideFlags: 0

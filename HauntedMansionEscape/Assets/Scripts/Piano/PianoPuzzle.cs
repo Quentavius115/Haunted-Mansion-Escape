@@ -10,12 +10,14 @@ public class PianoPuzzle : MonoBehaviour
     public Note lastNote;
     public AudioSource audioSrc;
     public DoorScript door;
+    public GameObject atticDoor;
 
     private Dictionary<State, Action> stateEnterMethods;
     private Dictionary<State, Action> stateStayMethods;
 
     void Start()
     {
+
         stateEnterMethods = new()
         {
             [State.IDLE] = StateEnter_Idle,
@@ -61,8 +63,8 @@ public class PianoPuzzle : MonoBehaviour
 
     #region State Methods
     #region State Enter Methods
-    private void StateEnter_Idle() 
-    { 
+    private void StateEnter_Idle()
+    {
         // Do Nothing
     }
     private void StateEnter_FIRST_KEY_E()
@@ -76,7 +78,7 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateEnter_FINAL_KEY_F()
     {
-        SoundManager.Play(SoundType.PIANOFINISH);
+        SoundManager.Instance.Play(SoundType.PIANOFINISH);
         door.UpdateState(DoorState.OPENING);
     }
     private void StateEnter_Error()

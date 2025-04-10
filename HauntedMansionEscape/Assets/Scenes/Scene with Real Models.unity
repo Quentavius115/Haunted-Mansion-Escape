@@ -2500,7 +2500,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 2
   renderableMesh:
-    name: UM_OperatedMesh_04e7fd12-214d-4f8a-8c33-ad69950b212b
+    name: UM_OperatedMesh_0c9791b9-ecaa-4953-a21e-2240b0e15732
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: d2779fb2cfd42384592cd915aee666c0, type: 2}
     buidVersion:
@@ -2512,7 +2512,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 04e7fd12-214d-4f8a-8c33-ad69950b212b
+  sourceMeshRendererGUID: 0c9791b9-ecaa-4953-a21e-2240b0e15732
   guid: 20a633b6-1b6f-4964-96cf-9442fcf9e839
   localOptions:
     RecalculateTangents: 0
@@ -9473,6 +9473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastNote: 0
   audioSrc: {fileID: 388340669}
+  door: {fileID: 0}
+  atticDoor: {fileID: 1913830469}
 --- !u!82 &388340669
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11282,7 +11284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3575828923371076674, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7603941412743318203, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_Name
@@ -11552,7 +11554,7 @@ MonoBehaviour:
   - Assets/Materials/Shaggy Rug.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_9c32c613-ffdf-428b-b248-4e6c76560ab4
+    name: UM_OperatedMesh_a65cdabe-e27c-4366-abbf-2602722566c7
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 8356de9cbf899dc4aaef5148b117de18, type: 2}
     buidVersion:
@@ -11564,7 +11566,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 9c32c613-ffdf-428b-b248-4e6c76560ab4
+  sourceMeshRendererGUID: a65cdabe-e27c-4366-abbf-2602722566c7
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -14104,7 +14106,7 @@ MonoBehaviour:
   - Assets/Materials/Old Plywood.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_002afb6f-1746-4c63-b670-a741f3d0bcce
+    name: UM_OperatedMesh_2fca4c33-3837-4666-97d8-0b3b2e711b85
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 7e443e5ee88cc574cadacdd1ee3c7f6c, type: 2}
     buidVersion:
@@ -14116,7 +14118,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 002afb6f-1746-4c63-b670-a741f3d0bcce
+  sourceMeshRendererGUID: 2fca4c33-3837-4666-97d8-0b3b2e711b85
   guid: 2c3c9802-4994-4a0e-a60f-665339116111
   localOptions:
     RecalculateTangents: 0
@@ -15694,7 +15696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3575828923371076674, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7603941412743318203, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_Name
@@ -18719,7 +18721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3575828923371076674, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7603941412743318203, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_Name
@@ -27821,7 +27823,7 @@ MonoBehaviour:
   - Assets/Materials/Chipped Painted Wall.mat
   currentMaterialIndex: 3
   renderableMesh:
-    name: UM_OperatedMesh_be5c5152-0d29-4674-b74a-f0888dc5e6c2
+    name: UM_OperatedMesh_8099b1c3-8a32-4bcd-b68e-4aef2761282a
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 5ae5308e73a844b4ab5f52fe930a5720, type: 2}
     buidVersion:
@@ -27833,7 +27835,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: be5c5152-0d29-4674-b74a-f0888dc5e6c2
+  sourceMeshRendererGUID: 8099b1c3-8a32-4bcd-b68e-4aef2761282a
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -29978,7 +29980,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Black.mat
   currentMaterialIndex: 1
   renderableMesh:
-    name: UM_OperatedMesh_f2064967-eefc-47c6-a8ce-003bd693d91c
+    name: UM_OperatedMesh_6c9a28dd-e957-48d9-88e5-558f2d2310f2
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 6308d2061c80a794b9dabb7b1abaea34, type: 2}
     buidVersion:
@@ -29990,7 +29992,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: f2064967-eefc-47c6-a8ce-003bd693d91c
+  sourceMeshRendererGUID: 6c9a28dd-e957-48d9-88e5-558f2d2310f2
   guid: 080f87c4-3c7e-46dc-93a0-591613a2096a
   localOptions:
     RecalculateTangents: 0
@@ -37899,15 +37901,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3850670178918675931, guid: 8b1d58f9ba625c64689e2957c719dcaf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6385121
+      value: -4.128
       objectReference: {fileID: 0}
     - target: {fileID: 3850670178918675931, guid: 8b1d58f9ba625c64689e2957c719dcaf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.731245
+      value: -3.75
       objectReference: {fileID: 0}
     - target: {fileID: 3850670178918675931, guid: 8b1d58f9ba625c64689e2957c719dcaf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.1430593
+      value: -4.307
       objectReference: {fileID: 0}
     - target: {fileID: 3850670178918675931, guid: 8b1d58f9ba625c64689e2957c719dcaf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38046,7 +38048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3575828923371076674, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7603941412743318203, guid: 7627451299f6e964c8e23a636ea3d38e, type: 3}
       propertyPath: m_Name

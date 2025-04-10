@@ -13,8 +13,6 @@ public class CandelManager : MonoBehaviour
     public ParticleSystem flameParticles;
 
     [Header("Fire Audio")]
-    public AudioSource ignite;
-    public AudioSource reaction;
     public AudioSource idle;
 
     [HideInInspector]
@@ -26,14 +24,10 @@ public class CandelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        flameParticles = GetComponent<ParticleSystem>();
         isSatisfied = false;
         UpdateBurning();
-
         idle.volume = .1f;
-        ignite.volume = .2f;
-        reaction.volume = .2f;
-
-        flameParticles = GetComponent<ParticleSystem>();
     }
 
 
@@ -62,7 +56,7 @@ public class CandelManager : MonoBehaviour
         if (otherCandle != null && otherCandle.onFire && !onFire)
         {
             ChangeState(otherCandle.State);
-            ignite.Play();
+            SoundManager.Instance.Play(SoundType.FLAME_IGNITE);
             idle.Play();
         }
         else if (otherCandle != null && otherCandle.State == BurningState.EXTINGUISH)
@@ -88,7 +82,7 @@ public class CandelManager : MonoBehaviour
         ParticleSystem.MainModule main = flameParticles.main;
         main.startColor = color;
         flameParticles.Play();
-        reaction.Play();
+        SoundManager.Instance.Play(SoundType.FLAME_CHANGE);
 
         GetComponent<MeshRenderer>().enabled = true;
         GetComponent<MeshRenderer>().material.color = color;

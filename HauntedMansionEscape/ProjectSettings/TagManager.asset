@@ -8,6 +8,9 @@ TagManager:
   - Fireplace
   - King
   - Button
+  - fire wall
+  - End Door
+  - FirstDoor
   layers:
   - Default
   - TransparentFX
@@ -17,6 +20,8 @@ TagManager:
   - UI
   - Hands
   - Interactable
+  - Disc
+  - 
   - 
   - 
   - 

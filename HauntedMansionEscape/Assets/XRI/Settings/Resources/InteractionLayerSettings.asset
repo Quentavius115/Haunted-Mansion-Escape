@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
+  - Cursed Book
+  - Lid
   - 
   - 
   - 
@@ -38,10 +40,8 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - WhiteKing
+  - Rook1
+  - Rook2
+  - Disc
   - Teleport

@@ -55,7 +55,7 @@ MonoBehaviour:
   - Assets/Materials/MostMaterials.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_7899f92e-7c43-43eb-963b-4491a26a12c5
+    name: UM_OperatedMesh_3b363b5e-30cc-4308-b3d1-cfabc97e830b
     skinnedMesh: 0
     sharedMesh: {fileID: -7969210238888375348}
     buidVersion:
@@ -67,7 +67,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 7899f92e-7c43-43eb-963b-4491a26a12c5
+  sourceMeshRendererGUID: 3b363b5e-30cc-4308-b3d1-cfabc97e830b
   guid: cd77a764-0eae-4e3e-84ca-42a9fdb70dff
   localOptions:
     RecalculateTangents: 0

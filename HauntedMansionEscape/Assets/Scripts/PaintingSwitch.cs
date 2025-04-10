@@ -6,7 +6,6 @@ public class PaintingSwitch : MonoBehaviour
 {
 
     public GameObject sphere;
-    public Material material;
     FireChange fire;
     // Start is called before the first frame update
     void Start()
@@ -18,7 +17,7 @@ public class PaintingSwitch : MonoBehaviour
     void Update()
     {
         if(fire.burned == true){
-            sphere.GetComponent<MeshRenderer>().material = material;
+            sphere.SetActive(true);
         }
     }
 }

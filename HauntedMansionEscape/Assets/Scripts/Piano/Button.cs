@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +13,8 @@ public class Button : MonoBehaviour
     public Note note;
     public AudioSource audioSrc;
     public AudioClip clip;
+    public AudioClip counterPoint;
+    public Note lastNote;
     GameObject presser;
 
     // Start is called before the first frame update
@@ -20,15 +23,19 @@ public class Button : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("accepted");
-            button.transform.localPosition = new Vector3(0, 0.003f, 0);
             presser = collision.gameObject;
             onPress.Invoke();
-            audioSrc.PlayOneShot(clip, 1.0f);
+            audioSrc.Play();
+            Debug.Log("Collision");
+            if ((lastNote == Note.A5) && (note == Note.F4))
+            {
+                audioSrc.Stop();
+                audioSrc.PlayOneShot(counterPoint, 1.0f);
+            }
         }
     }
 
@@ -43,9 +50,4 @@ public class Button : MonoBehaviour
             audioSrc.Play();
         }
     }
-
-    public void printHi()
-    {
-        Debug.Log("Hello");
-        }
-    }
+}

@@ -52,6 +52,7 @@ public class PianoPuzzle : MonoBehaviour
     {
         if (State != newState)
         {
+            Debug.Log("NewState");
             State = newState;
             stateEnterMethods[newState]();
         }
@@ -65,23 +66,22 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateEnter_FIRST_KEY_E()
     {
-        Debug.Log("E4");
+        SoundManager.Play(SoundType.E4);
     }
     private void StateEnter_SECOND_KEY_G()
     {
-        Debug.Log("G4");
+        SoundManager.Play(SoundType.G4);
     }
     private void StateEnter_THIRD_KEY_A()
     {
-        Debug.Log("A5");
+        SoundManager.Play(SoundType.A5);
     }
     private void StateEnter_FINAL_KEY_F()
     {
-        Debug.Log("F4");
+        SoundManager.Play(SoundType.FINISHED);
     }
     private void StateEnter_Error()
     {
-        SoundManager.Play(SoundType.WRONG);
         ChangeState(State.IDLE);
     }
     #endregion
@@ -143,8 +143,7 @@ public class PianoPuzzle : MonoBehaviour
     #endregion
     public void Press(Note note)
     {
-        Note newNote = note;
+        Debug.Log("inPress");
         lastNote = note;
-        note = newNote;
     }
 }

@@ -8,7 +8,9 @@ using UnityEngine;
 
 public class PowderScript : MonoBehaviour
 {
+    [HideInInspector]
     public JarContents content;
+    [HideInInspector]
     public BurningState fireState;
     private Color chemicalColor;
 
@@ -36,8 +38,8 @@ public class PowderScript : MonoBehaviour
     // well enough for now and im tired. Ill try to come back to this.
     public void SetChemical(BurningState color, Color dustColor)
     {
-        GetComponent<MeshRenderer>().material.color = chemicalColor;
+        GetComponent<MeshRenderer>().material.color = dustColor;
         fireState = color;
-        chemicalColor = dustColor;
+
     }
 }

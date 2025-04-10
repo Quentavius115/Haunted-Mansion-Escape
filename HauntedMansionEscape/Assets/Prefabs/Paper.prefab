@@ -55,7 +55,7 @@ MonoBehaviour:
   - Assets/Materials/Paper.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_238da95e-13a1-47f7-b769-097e2b426bba
+    name: UM_OperatedMesh_1171bc7e-ff74-4fad-a5f0-8a5653d4b48d
     skinnedMesh: 0
     sharedMesh: {fileID: -6218955491838698752}
     buidVersion:
@@ -67,7 +67,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 238da95e-13a1-47f7-b769-097e2b426bba
+  sourceMeshRendererGUID: 1171bc7e-ff74-4fad-a5f0-8a5653d4b48d
   guid: 57602839-34cf-4b0e-aafd-2954cb8025b5
   localOptions:
     RecalculateTangents: 0

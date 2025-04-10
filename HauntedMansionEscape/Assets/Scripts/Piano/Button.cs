@@ -14,7 +14,6 @@ public class Button : MonoBehaviour
     public AudioSource audioSrc;
     public AudioClip clip;
     public AudioClip counterPoint;
-    public Note lastNote;
     GameObject presser;
 
     // Start is called before the first frame update
@@ -31,11 +30,12 @@ public class Button : MonoBehaviour
             onPress.Invoke();
             audioSrc.Play();
             Debug.Log("Collision");
-            if ((lastNote == Note.A5) && (note == Note.F4))
+            if ((puzzle.lastNote == Note.A5) && (note == Note.F4))
             {
                 audioSrc.Stop();
                 audioSrc.PlayOneShot(counterPoint, 1.0f);
             }
+            puzzle.lastNote = note;
         }
     }
 

@@ -516,7 +516,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
@@ -621,7 +621,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 227844288}
-  - component: {fileID: 227844290}
   - component: {fileID: 227844289}
   - component: {fileID: 227844292}
   - component: {fileID: 227844291}
@@ -752,19 +751,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &227844290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227844287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ea0363dad89cc8468f7fd329a2c3d67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSrc: {fileID: 227844289}
 --- !u!114 &227844291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,6 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea0363dad89cc8468f7fd329a2c3d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastNote: 0
   audioSrc: {fileID: 227844289}
 --- !u!114 &227844292
 MonoBehaviour:
@@ -1529,7 +1516,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_04b1d574-1845-43f7-84f1-46ffbc289f90
+    name: UM_OperatedMesh_df70e868-7b5e-4f6e-9067-c7a10e507e70
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 226e83861a2d6454e8a37ee684dc676d, type: 2}
     buidVersion:
@@ -1541,7 +1528,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 04b1d574-1845-43f7-84f1-46ffbc289f90
+  sourceMeshRendererGUID: df70e868-7b5e-4f6e-9067-c7a10e507e70
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -1897,7 +1884,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_45f4e4a1-3416-4e9a-9300-daef0a3b4b68
+    name: UM_OperatedMesh_17147277-8dd3-4652-b2d9-a7d9eef1038f
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: a964972f97c9c7b44a4d5f9908cabd20, type: 2}
     buidVersion:
@@ -1909,7 +1896,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 45f4e4a1-3416-4e9a-9300-daef0a3b4b68
+  sourceMeshRendererGUID: 17147277-8dd3-4652-b2d9-a7d9eef1038f
   guid: a1107598-5998-42de-801b-155f43833e28
   localOptions:
     RecalculateTangents: 0
@@ -2230,7 +2217,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
@@ -2441,7 +2428,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
@@ -4205,7 +4192,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
@@ -4451,7 +4438,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
@@ -5128,7 +5115,7 @@ MonoBehaviour:
   - Packages/com.tripolygon.umodeler-x/Editor/Resources/Materials/UModelerX_Gray_URP.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_527e8631-98f6-4e88-a98e-0d96b35b0759
+    name: UM_OperatedMesh_c4c2759e-e5bc-44c4-b607-d567bc53cc96
     skinnedMesh: 0
     sharedMesh: {fileID: 4300000, guid: 81129c7e98d3aa046bbae079a209ad1c, type: 2}
     buidVersion:
@@ -5140,7 +5127,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 527e8631-98f6-4e88-a98e-0d96b35b0759
+  sourceMeshRendererGUID: c4c2759e-e5bc-44c4-b607-d567bc53cc96
   guid: fde80834-84cd-4abc-8f5c-d2cc389ec0b3
   localOptions:
     RecalculateTangents: 0
@@ -5416,7 +5403,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
@@ -5539,7 +5526,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 
@@ -5749,7 +5736,7 @@ PrefabInstance:
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: puzzle
       value: 
-      objectReference: {fileID: 227844290}
+      objectReference: {fileID: 227844291}
     - target: {fileID: 733296712029710654, guid: 45e40af72e6657045860c937760bc5a4, type: 3}
       propertyPath: audioSrc
       value: 

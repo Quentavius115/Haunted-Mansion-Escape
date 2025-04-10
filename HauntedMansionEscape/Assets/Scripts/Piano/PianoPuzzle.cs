@@ -7,7 +7,7 @@ using State = PianoState;
 public class PianoPuzzle : MonoBehaviour
 {
     public PianoState State { get; private set; }
-    private Note lastNote;
+    public Note lastNote;
     public AudioSource audioSrc;
 
     private Dictionary<State, Action> stateEnterMethods;
@@ -66,15 +66,12 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateEnter_FIRST_KEY_E()
     {
-        SoundManager.Play(SoundType.E4);
     }
     private void StateEnter_SECOND_KEY_G()
     {
-        SoundManager.Play(SoundType.G4);
     }
     private void StateEnter_THIRD_KEY_A()
     {
-        SoundManager.Play(SoundType.A5);
     }
     private void StateEnter_FINAL_KEY_F()
     {
@@ -89,6 +86,7 @@ public class PianoPuzzle : MonoBehaviour
     #region State Stay Methods
     private void StateStay_Idle()
     {
+        Debug.Log("E4");
         if (lastNote == Note.E4)
         {
             ChangeState(State._FIRST_KEY_E);
@@ -100,6 +98,7 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateStay_FIRST_KEY_E()
     {
+        Debug.Log("G4");
         if (lastNote == Note.G4)
         {
             ChangeState(State._SECOND_KEY_G);
@@ -111,6 +110,7 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateStay_SECOND_KEY_G()
     {
+        Debug.Log("A4");
         if (lastNote == Note.A5)
         {
             ChangeState(State._THIRD_KEY_A);
@@ -122,6 +122,7 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateStay_THIRD_KEY_A()
     {
+        Debug.Log("F4");
         if (lastNote == Note.F4)
         {
             ChangeState(State._FINAL_KEY_F);
@@ -133,7 +134,7 @@ public class PianoPuzzle : MonoBehaviour
     }
     private void StateStay_FINAL_KEY_F()
     {
-        
+        Debug.Log("Finish");
     }
     private void StateStay_Error()
     {

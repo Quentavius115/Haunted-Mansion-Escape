@@ -16,7 +16,7 @@ public enum SoundType
 
 public class SoundCollection
 {
-    private AudioClip[] clips;
+    public AudioClip[] clips;
     private int lastClipIndex;
 
     public SoundCollection(params string[] clipNames)
@@ -73,14 +73,14 @@ public class SoundManager : MonoBehaviour
         Instance = this;
         audioSrc = GetComponent<AudioSource>();
         sounds = new() {
-            { SoundType.C4, new("c4") },
-            { SoundType.D4, new("d4") },
-            { SoundType.E4, new("e4") },
-            { SoundType.F4, new("f4") },
-            { SoundType.G4, new("g4") },
-            { SoundType.A5, new("a5") },
-            { SoundType.B5, new("b5") },
-            { SoundType.C5, new("c5") },
+            { SoundType.C4, new("C4") },
+            { SoundType.D4, new("D4") },
+            { SoundType.E4, new("E4") },
+            { SoundType.F4, new("F4") },
+            { SoundType.G4, new("G4") },
+            { SoundType.A5, new("A5") },
+            { SoundType.B5, new("B5") },
+            { SoundType.C5, new("C5") },
             { SoundType.FINISHED, new("CounterPoint") },
         };
     }

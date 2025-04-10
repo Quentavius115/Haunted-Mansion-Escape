@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1593180100210038706}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37426758, y: 1.6928, z: -0.47210693}
+  m_LocalPosition: {x: 0.37426758, y: 1.7968, z: -0.4754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ MonoBehaviour:
   - Assets/Materials/MostMaterials.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_879d1a5b-51d5-4722-ac18-2958e76707a0
+    name: UM_OperatedMesh_a36b5b00-3885-40a3-aee6-98f5125adcf6
     skinnedMesh: 0
     sharedMesh: {fileID: 2058282199255693673}
     buidVersion:
@@ -67,7 +67,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 879d1a5b-51d5-4722-ac18-2958e76707a0
+  sourceMeshRendererGUID: a36b5b00-3885-40a3-aee6-98f5125adcf6
   guid: 6b7c865c-0d44-4023-a905-113946fd2d1d
   localOptions:
     RecalculateTangents: 0
@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 7046963865330754795}
   - component: {fileID: 8946125084246316579}
   - component: {fileID: 3278679358274139686}
+  - component: {fileID: 2412892854264047212}
   m_Layer: 0
   m_Name: Grandfather Clock
   m_TagString: Untagged
@@ -168,7 +169,6 @@ Transform:
   - {fileID: 2070952181441540478}
   - {fileID: 7495350669544486102}
   - {fileID: 2679923064625040104}
-  - {fileID: 6521144687232547030}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7046963865330754795
@@ -192,7 +192,7 @@ MonoBehaviour:
   - Assets/Materials/MostMaterials.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_2f5b1fe7-c28b-488f-86c1-e78d2bbf5398
+    name: UM_OperatedMesh_79d8c94a-46f3-4cc9-8085-17aa2bf78a49
     skinnedMesh: 0
     sharedMesh: {fileID: -1600059331577387182}
     buidVersion:
@@ -204,7 +204,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 2f5b1fe7-c28b-488f-86c1-e78d2bbf5398
+  sourceMeshRendererGUID: 79d8c94a-46f3-4cc9-8085-17aa2bf78a49
   guid: e8e55160-58f0-400c-a5f4-416b0c444cd4
   localOptions:
     RecalculateTangents: 0
@@ -270,6 +270,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2412892854264047212
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2540772369578565083}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b45d7866a4e6f741bf3ccc494263760, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3945186054254023830
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 3945186054254023830}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37426758, y: 1.8646, z: -0.47210693}
+  m_LocalPosition: {x: 0.37426758, y: 1.8646, z: -0.4721069}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -325,7 +346,7 @@ MonoBehaviour:
   - Assets/Materials/MostMaterials.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_121d09e7-6b54-4e11-89e9-f6865c2e9221
+    name: UM_OperatedMesh_bdba3d32-b06d-47fb-91a5-6f630c3a89ab
     skinnedMesh: 0
     sharedMesh: {fileID: -6729972303355757049}
     buidVersion:
@@ -337,7 +358,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 121d09e7-6b54-4e11-89e9-f6865c2e9221
+  sourceMeshRendererGUID: bdba3d32-b06d-47fb-91a5-6f630c3a89ab
   guid: 6b7c865c-0d44-4023-a905-113946fd2d1d
   localOptions:
     RecalculateTangents: 0
@@ -431,11 +452,11 @@ Transform:
   m_GameObject: {fileID: 5442386812079566879}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071067, y: -0, z: -0, w: 0.70710695}
-  m_LocalPosition: {x: 0.3787, y: 0.4168, z: -0.2848}
+  m_LocalPosition: {x: 0.034583777, y: -0.2132, z: -0.02198258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3276500124161223449}
+  m_Father: {fileID: 2679923064625040104}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &1292939630070709911
 MonoBehaviour:
@@ -458,7 +479,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Gold.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_bf2706e3-0919-4ced-8ee6-ba47b16bef50
+    name: UM_OperatedMesh_8c70abc2-51d6-497f-a630-fd0941a04d71
     skinnedMesh: 0
     sharedMesh: {fileID: 1798719429568991015}
     buidVersion:
@@ -470,7 +491,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: bf2706e3-0919-4ced-8ee6-ba47b16bef50
+  sourceMeshRendererGUID: 8c70abc2-51d6-497f-a630-fd0941a04d71
   guid: 59cbb32a-cdf1-49d0-8d13-343ebd565122
   localOptions:
     RecalculateTangents: 0
@@ -564,10 +585,11 @@ Transform:
   m_GameObject: {fileID: 8926202908403223398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3441162, y: 0.63, z: -0.26281738}
+  m_LocalPosition: {x: 0.3441162, y: 0.63, z: -0.2628174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6521144687232547030}
   m_Father: {fileID: 3276500124161223449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7940448802479925062
@@ -591,7 +613,7 @@ MonoBehaviour:
   - Assets/Materials/Old Materials/Gold.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_16a2239f-aa4f-4344-8a8f-6e0ecb988ea3
+    name: UM_OperatedMesh_60741c67-2cdb-4781-8686-b9210570a080
     skinnedMesh: 0
     sharedMesh: {fileID: 4562852983999778896}
     buidVersion:
@@ -603,7 +625,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: 16a2239f-aa4f-4344-8a8f-6e0ecb988ea3
+  sourceMeshRendererGUID: 60741c67-2cdb-4781-8686-b9210570a080
   guid: b75a0b8c-b182-4fd7-a6a1-6874dd50d66e
   localOptions:
     RecalculateTangents: 0

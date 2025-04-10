@@ -1,11 +1,13 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public enum SoundType
 {
-    CORRECT,
-    WRONG,
-    FINISHED,
+    AMBIENCE,
+    FLAME_IGNITE,
+    FLAME_CHANGE,
 }
 
 public class SoundCollection
@@ -52,7 +54,10 @@ public class SoundCollection
 
 }
 
-[RequireComponent(typeof(AudioSource))]
+
+// I dont think much needs to be changed from the original file cherry made, just adding our own sounds.
+// Credit to this code is to cherry of course
+
 public class SoundManager : MonoBehaviour
 {
     public float mainVolume = 1.0f;
@@ -67,21 +72,20 @@ public class SoundManager : MonoBehaviour
         Instance = this;
         audioSrc = GetComponent<AudioSource>();
         sounds = new() {
-            { SoundType.CORRECT, new("correct") },
-            { SoundType.WRONG, new("wrong") },
-            { SoundType.FINISHED, new("finished") },
+            { SoundType.AMBIENCE, new("Ambience/Thunder_1","Ambience/Thunder_2","Ambience/Thunder_3","Ambience/Thunder_4","Ambience/Spooky_1","Ambience/Spooky_2") },
+            { SoundType.FLAME_IGNITE, new("Candle_Light") },
+            { SoundType.FLAME_CHANGE, new("Candle_Change") },
         };
     }
 
-    public static void Play(SoundType type, AudioSource audioSrc = null, float pitch = -1)
+    public void Play(SoundType type, AudioSource audioSrc = null)
     {
-        print("playing sound");
-        if (Instance.sounds.ContainsKey(type))
+        if (sounds.ContainsKey(type))
         {
-            audioSrc ??= Instance.audioSrc;
-            audioSrc.volume = Random.Range(0.70f, 1.0f) * Instance.mainVolume;
-            audioSrc.pitch = pitch >= 0 ? pitch : Random.Range(0.75f, 1.25f);
-            audioSrc.clip = Instance.sounds[type].GetRandClip();
+            audioSrc ??= this.audioSrc;
+            audioSrc.volume = Random.Range(0.40f, 0.70f) * mainVolume;
+            audioSrc.pitch = Random.Range(0.5f, 1.25f);
+            audioSrc.clip = sounds[type].GetRandClip();
             audioSrc.Play();
         }
     }

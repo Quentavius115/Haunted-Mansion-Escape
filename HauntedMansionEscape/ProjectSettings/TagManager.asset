@@ -8,6 +8,7 @@ TagManager:
   - Fireplace
   - King
   - fire wall
+  - End Door
   layers:
   - Default
   - TransparentFX

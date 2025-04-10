@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Inputs;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class CandleListener : MonoBehaviour
@@ -15,8 +16,11 @@ public class CandleListener : MonoBehaviour
     public AudioSource Connected;
     public AudioSource OpeningDoor;
     public AudioSource FinaleTune;
+    public GameObject endDoor;
 
-    private DoorState Door;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +28,7 @@ public class CandleListener : MonoBehaviour
         FinaleTune.volume = .05f;
         allCandles.AddRange(FindObjectsOfType<CandelManager>());
         checkCube.GetComponent<MeshRenderer>().material.color = Color.red;
+
     }
 
     // Update is called once per frame
@@ -53,9 +58,11 @@ public class CandleListener : MonoBehaviour
 
     void CheckAllConditionsSatisfied()
     {
+        var door = endDoor.GetComponent<DoorScript>();
 
         // Add logic for checking if book is satisfied by being in correct snapped place 
         bool allStateSatisfied = true;
+
 
         foreach (var candle in allCandles)
         {
@@ -76,7 +83,7 @@ public class CandleListener : MonoBehaviour
         if (allStateSatisfied)
         {
             // Plays sound only if door isnt open
-            if (Door != DoorState.OPEN)
+            if (door.State != DoorState.OPEN)
             {
                 foreach (var candle in allCandles)
                 {
@@ -84,7 +91,7 @@ public class CandleListener : MonoBehaviour
                 }
 
 
-                Door = DoorState.OPEN;
+                door.UpdateState(DoorState.OPEN);
                 OpeningDoor.Play();
                 FinaleTune.Play();
                 checkCube.GetComponent<MeshRenderer>().material.color = Color.green;

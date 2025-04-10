@@ -208,7 +208,7 @@ MonoBehaviour:
   - Assets/VRTemplateAssets/Materials/Environment/Glass.mat
   currentMaterialIndex: 0
   renderableMesh:
-    name: UM_OperatedMesh_e2a2cee7-ac90-4e8e-a577-41549c26c125
+    name: UM_OperatedMesh_ea396993-aef5-4469-8c74-dbb88942843c
     skinnedMesh: 0
     sharedMesh: {fileID: -1162524674850996530}
     buidVersion:
@@ -220,7 +220,7 @@ MonoBehaviour:
       IndexVersion: 0
       OptimizedTopology: 0
   sourceMesh: {fileID: 0}
-  sourceMeshRendererGUID: e2a2cee7-ac90-4e8e-a577-41549c26c125
+  sourceMeshRendererGUID: ea396993-aef5-4469-8c74-dbb88942843c
   guid: 2d4a1044-f88b-4fb4-88a0-5639387a57a4
   localOptions:
     RecalculateTangents: 0
